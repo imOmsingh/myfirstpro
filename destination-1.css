@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&display=swap');
+
+
+
+.navi-bar a{
+	color:inherit;
+	text-decoration: none;
+}
+
+.navi-bar a:hover{
+	color:inherit;
+	text-decoration: none;
+	border-bottom: white 1px solid;
+}
+.
+.sample-color{
+	background-color: red;
+}
+.navi-bar{
+	position: absolute;
+	right:0px;
+	top:50px;
+	height: 60px;
+	backdrop-filter: blur(70px);
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	font-size: 17px;
+	width: 50%;
+}
+.navi-bar-plan{
+	height:25px;
+	width:50%;
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	font-size:17px;
+}
+.navi-bar-plan a{
+	color:inherit;
+	text-decoration: none;
+}
+
+.navi-bar-plan a:hover{
+	color:inherit;
+	text-decoration: none;
+	border-bottom: white 1px solid;
+}
+
+.navi-but{
+	margin-top:14px;
+}
+.menu-bar-icon{
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+}
+.menu-bar-icon div{
+	border: 2px solid white;
+	height:3px;
+	width:30px;
+	color:white;
+	margin:4px;
+
+}
+.menu-bar{
+	text-align: center;
+	backdrop-filter:blur(70px);
+	display: none;
+	animation-duration:2s; 
+	
+}
+.menu-bar a{
+	text-decoration: none;
+	color: white;
+	margin:10px;
+	padding:10px;
+	height: 50px;
+	display:none;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	opacity:0;
+
+}
+.menu-bar a:hover{
+	color: white;
+	border: 1px white solid;
+} 
+.header img{
+	height: 50px;
+}
+.hori-cont{
+	padding:18px;
+}
+.header{
+	padding:60px;
+	padding-bottom:30px;
+	justify-content: flex-start;
+
+}
+.hori{
+	height: 0px;
+	color: grey;
+	width:500px;
+	border-top:0.1px grey solid;
+}
+
+.bod-container{
+	flex-direction: row;
+}
+.plan-body{
+	width:500px;
+	margin-left: 30px;
+
+}
+.img-bod{
+	padding-left:80px;
+	padding-top: 40px;
+}
+
+.text-body{
+	width:500px;
+	padding:50px;
+}
+.text-1{
+	color:white;
+	font-family: 'Yuji Syuku', serif;
+	margin-bottom:15px;
+}
+.plan-name{
+	color:white;
+	font-family: 'Playfair Display', serif;
+	font-size:80px;
+	
+}
+.plan-text{
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	line-height: 30px;
+	margin: 20px 0px;
+}
+.distance{
+	justify-content: space-around;
+}
+.bot-text-1{
+
+	text-align: center;
+	font-size: 15px;
+	color:white;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.bot-text-2{
+	color:white;
+	font-size: 25px;
+	font-family: 'Montagu Slab', serif;
+}
+
+
+@keyframes menucont{
+	from {height:0px;}
+	to {height: 300px;}
+}
+@keyframes menutab{
+	form {opacity:0;}
+	to {opacity:1;}
+}
+@keyframes movetextdown{
+	from {top:130px;}
+	to {top:430px;}
+}
+@keyframes movetextup{
+	from {top:430px;}
+	to {top:130px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 786px){
+	body{
+		background-image: url("background-destination-comp.jpg")
+	}
+}
+
+@media (min-width:786px) and (max-width: 950px){
+	
+	.navi-bar{
+	padding-top: 5px;
+	height: 60px;
+	width: 60%;
+	backdrop-filter: blur(70px);
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	font-size: 17px;
+}
+
+}
+@media only screen and (min-width:425px) and (max-width:786px){
+	.navi-bar{
+		font-size: 15px;
+		display: none;
+		backdrop-filter: blur(0px);
+		width:0px;
+	}
+	.navi-but{
+		display: none;
+	}
+	.header{
+		justify-content: space-between;
+	}
+
+
+	.navi-bar-plan{
+		margin:20px auto 0px auto;
+	}
+	.hori-cont{
+		display: none;
+	}
+	body{
+		background-image: url("background-destination-tablet.jpg")
+	}
+	.bod-container{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+	}
+	.text-body{
+		padding: 20px;
+		
+		
+	}
+	.text-1{
+		position: absolute;
+		top:130px;
+		left:30px;
+		
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+
+	}
+	.plan-name{
+		text-align:center;
+	}
+
+} 

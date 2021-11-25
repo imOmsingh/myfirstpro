@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&display=swap');
+
+
+
+.navi-bar a{
+	color:inherit;
+	text-decoration: none;
+}
+
+.navi-bar a:hover{
+	color:inherit;
+	text-decoration: none;
+	border-bottom: white 1px solid;
+}
+.
+.sample-color{
+	background-color: red;
+}
+.navi-bar{
+	position: absolute;
+	right:0px;
+	top:50px;
+	height: 60px;
+	backdrop-filter: blur(70px);
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	font-size: 17px;
+	width: 50%;
+}
+.navi-bar-plan{
+	height:25px;
+	width:50%;
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	font-size:17px;
+}
+.navi-bar-plan a{
+	color:inherit;
+	text-decoration: none;
+}
+
+.navi-bar-plan a:hover{
+	color:inherit;
+	text-decoration: none;
+	border-bottom: white 1px solid;
+}
+
+.navi-but{
+	margin-top:14px;
+}
+.header img{
+	height: 50px;
+}
+.hori-cont{
+	padding:18px;
+}
+.header{
+	padding:60px;
+	padding-bottom:30px;
+
+}
+.hori{
+	height: 0px;
+	color: grey;
+	width:500px;
+	border:0.1px grey solid;
+}
+
+.bod-container{
+	flex-direction: row;
+}
+.plan-body{
+	width:500px;
+	margin-left: 30px;
+
+}
+.img-bod{
+	padding-left:80px;
+	padding-top: 40px;
+}
+
+.text-body{
+	width:500px;
+	padding:50px;
+}
+.text-1{
+	color:white;
+	font-family: 'Yuji Syuku', serif;
+	margin-bottom:15px;
+}
+.plan-name{
+	color:white;
+	font-family: 'Playfair Display', serif;
+	font-size:80px;
+	
+}
+.plan-text{
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	line-height: 30px;
+	margin: 20px 0px;
+}
+.distance{
+	justify-content: space-around;
+}
+.bot-text-1{
+
+	text-align: center;
+	font-size: 15px;
+	color:white;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.bot-text-2{
+	color:white;
+	font-size: 25px;
+	font-family: 'Montagu Slab', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 786px){
+	body{
+		background-image: url("background-destination-comp.jpg")
+	}
+}
+
+@media (min-width:786px) and (max-width: 950px){
+	
+	.navi-bar{
+	padding-top: 5px;
+	height: 60px;
+	width: 60%;
+	backdrop-filter: blur(70px);
+	color: white;
+	font-family: 'Inconsolata', monospace;
+	font-size: 17px;
+}
+
+}
+@media (max-width:786px){
+	.navi-bar{
+		padding-top: 5px;
+		height: 60px;
+		width: 70%;
+		backdrop-filter: blur(70px);
+		color: white;
+		font-family: 'Inconsolata', monospace;
+		font-size: 15px;
+	}
+	.navi-bar-plan{
+		margin:20px auto 0px auto;
+	}
+	.hori-cont{
+		display: none;
+	}
+	body{
+		background-image: url("background-destination-tablet.jpg")
+	}
+	.bod-container{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+	}
+	.text-body{
+		padding: 20px;
+		
+		
+	}
+	.text-1{
+		position: absolute;
+		top:130px;
+		left:30px;
+
+	}
+	.plan-name{
+		text-align:center;
+	}
+
+} 
